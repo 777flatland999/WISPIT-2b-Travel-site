@@ -97,26 +97,28 @@ function showBookingConfirmation(data) {
     `;
     
     modalContent.innerHTML = `
-        <h2 style="color: #00d4ff; font-family: 'Orbitron', monospace; margin-bottom: 1.5rem; font-size: 2rem;">
-            🎉 Booking Successful! 🎉
-        </h2>
-        <pre style="white-space: pre-wrap; line-height: 1.6; color: #b8b8d0; text-align: left;">
-${confirmationMessage}
-        </pre>
-        <button id="close-modal" style="
-            background: linear-gradient(135deg, #00d4ff 0%, #00ff88 100%);
-            color: #0a0a0f;
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1rem;
-            font-weight: 700;
-            border-radius: 50px;
-            cursor: pointer;
-            margin-top: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-        ">Close</button>
+        <div>
+            <h2 style="color: #00d4ff; font-family: 'Orbitron', monospace; margin-bottom: 1.5rem; font-size: 2rem;">
+                🎉 Booking Successful! 🎉
+            </h2>
+            <pre style="white-space: pre-wrap; line-height: 1.6; color: #b8b8d0; text-align: left;">
+                ${confirmationMessage}
+            </pre>
+            <button id="close-modal" style="
+                background: linear-gradient(135deg, #00d4ff 0%, #00ff88 100%);
+                color: #0a0a0f;
+                border: none;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+                font-weight: 700;
+                border-radius: 50px;
+                cursor: pointer;
+                margin-top: 2rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                transition: all 0.3s ease;
+            ">Close</button>
+        </div>
     `;
     
     modalOverlay.appendChild(modalContent);

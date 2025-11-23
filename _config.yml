@@ -3,11 +3,11 @@ title: Windsurf Project
 email: your-email@example.com
 description: >-
   A project about windsurfing
-baseurl: ""
-url: "" # Update this with your domain when you have one
+baseurl: "/WISPIT-2b-Travel-site"
+url: "https://777flatland999.github.io" # Base URL for GitHub Pages
 
 twitter_username: your-twitter-handle
-github_username:  your-github-username
+github_username: 777flatland999
 
 # Build settings
 markdown: kramdown

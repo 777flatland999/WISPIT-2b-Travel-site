@@ -1,0 +1,52 @@
+# Site settings
+title: Windsurf Project
+email: your-email@example.com
+description: >-
+  A project about windsurfing
+baseurl: ""
+url: "" # Update this with your domain when you have one
+
+twitter_username: your-twitter-handle
+github_username:  your-github-username
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .git/
+  - .gitignore
+
+# Custom variables
+sass:
+  style: compressed
+
+# Collections
+collections:
+  - posts
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

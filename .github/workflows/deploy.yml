@@ -17,7 +17,8 @@ jobs:
           gem install bundler
           bundle install
       - name: Build site
-        run: JEKYLL_ENV=production bundle exec jekyll build --baseurl "/WISPIT-2b-Travel-site"
+        run: |
+          JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_gh_pages.yml
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:

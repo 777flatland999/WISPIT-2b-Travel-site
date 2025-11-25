@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-ruby@v3
+        with:
+          ruby-version: 3.2.2
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+      - name: Build site
+        run: JEKYLL_ENV=production bundle exec jekyll build --baseurl "/WISPIT-2b-Travel-site"
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: _site
+

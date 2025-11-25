@@ -1,0 +1,14 @@
+# Local development overrides
+baseurl: ""
+url: "http://localhost:4000"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - .git/
+  - .gitignore
+  - _config.yml
